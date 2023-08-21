@@ -5,8 +5,8 @@
     --cinza-secundario: #C0C0C0;
     --botao-azul: #167BF7;
     --cor-fundo: #00030C;
-
-    --fonte-principal:  'Inter', sans-serif;
+    --cor-botao-pressionado: #529cf7;
+    --fonte-principal: 'Inter', sans-serif;
 }
 
 * {
@@ -45,10 +45,20 @@ body {
     display: block;
     margin-bottom: 1em;
 }
+
+.container__botao:hover {
+    background-color:var(--cor-botao-pressionado);
+}
+
 .botao_secundario {
     background-color: transparent;
     border: 2px solid var(--branco-principal);
 }
+
+.botao_secundario:hover {
+    background-color: #c0c0c02f;
+}
+
 .container__aviso {
     font-size: 12px;
     color: var(--cinza-secundario);
@@ -159,4 +169,8 @@ body {
 
 .rodape__itens a {
     color: var(--branco-principal);
+}
+
+.rodape__itens a:hover {
+    color:var(--botao-azul)
 }
